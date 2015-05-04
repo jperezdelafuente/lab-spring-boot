@@ -1,0 +1,5 @@
+my:
+    servers:
+        - serverDefault1
+        - serverDefault2
+        - serverDefault3

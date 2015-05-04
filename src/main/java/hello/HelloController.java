@@ -1,14 +1,24 @@
 package hello;
 
-import org.springframework.web.bind.annotation.RestController;
+import hello.config.ConfigServers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    
-    @RequestMapping("/")
-    public String index() {
-        return "Greetings from Spring Boot!";
-    }
-    
+
+	@Autowired
+	private ConfigServers configServers;
+
+	@RequestMapping("/")
+	public String index() {
+		List<String> servers = configServers.getServers();
+		servers.stream().forEach(x -> System.out.println(x.toString()));
+
+		return "Greetings from Spring Boot!";
+	}
 }
