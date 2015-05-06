@@ -28,6 +28,18 @@ my:
         - serverDevel1
         - serverDevel2
         - serverDevel3
+        
+---
+
+############# profile pred #######################	
+spring:
+    profiles: pred
+
+my:
+    servers:
+        - serverPred1
+        - serverPred2
+        - serverPred3
 
 ---
 
