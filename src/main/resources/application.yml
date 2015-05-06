@@ -1,5 +1,42 @@
+############# profile default #######################
 my:
     servers:
         - serverDefault1
         - serverDefault2
         - serverDefault3
+
+---
+
+############# profile local #######################
+spring:
+    profiles: local
+
+my:
+    servers:
+        - serverLocal1
+        - serverLocal2
+        - serverLocal3
+
+---
+
+############# profile devel #######################
+spring:
+    profiles: devel
+
+my:
+    servers:
+        - serverDevel1
+        - serverDevel2
+        - serverDevel3
+
+---
+
+############# profile prod #######################	
+spring:
+    profiles: prod
+
+my:
+    servers:
+        - serverProd1
+        - serverProd2
+        - serverProd3    		
