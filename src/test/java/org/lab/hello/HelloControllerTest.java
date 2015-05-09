@@ -1,11 +1,12 @@
-package hello;
+package org.lab.hello;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
-import hello.config.ConfigServers;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.lab.hello.HelloController;
+import org.lab.hello.config.ConfigServers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;

@@ -1,4 +1,4 @@
-package hello;
+package org.lab.hello;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -8,6 +8,7 @@ import java.net.URL;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.lab.Application;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;

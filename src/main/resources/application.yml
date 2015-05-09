@@ -5,11 +5,18 @@ my:
         - serverDefault2
         - serverDefault3
 
+application:
+  name: lab-spring-boot 
+  version: 1.0
+  environment: default  
+
 ---
 
 ############# profile local #######################
 spring:
     profiles: local
+
+environment: local
 
 my:
     servers:
@@ -23,6 +30,9 @@ my:
 spring:
     profiles: devel
 
+application:
+    environment: devel
+
 my:
     servers:
         - serverDevel1
@@ -35,6 +45,9 @@ my:
 spring:
     profiles: pred
 
+application:
+    environment: pred
+
 my:
     servers:
         - serverPred1
@@ -46,6 +59,9 @@ my:
 ############# profile prod #######################	
 spring:
     profiles: prod
+
+application:
+    environment: prod
 
 my:
     servers:

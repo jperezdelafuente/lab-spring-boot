@@ -1,9 +1,8 @@
-package hello;
-
-import hello.config.ConfigServers;
+package org.lab.hello;
 
 import java.util.List;
 
+import org.lab.hello.config.ConfigServers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package hello.config;
+package org.lab.hello.config;
 
 import java.util.ArrayList;
 import java.util.List;
